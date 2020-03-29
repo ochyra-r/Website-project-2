@@ -1,11 +1,11 @@
 // NAV ---------------------- NAV
 
 const iconBurger = document.querySelector('.fa-bars');
-const nav = document.querySelector('nav.burger');
-const navHeight = nav.scrollHeight;
 const divMove = document.querySelector('div.move');
 
 const toggleMenu = function () {
+	const nav = document.querySelector('nav.burger');
+	const navHeight = nav.scrollHeight;
 	nav.classList.toggle('active');
 	// div.classList.toggle('start')
 	if (nav.classList.contains('active')) {
