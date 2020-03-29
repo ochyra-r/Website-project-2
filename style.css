@@ -284,6 +284,34 @@
     	letter-spacing: 1px;
     }
 
+    /* SCROLL UP ------------  SCROLL UP  ------------- SCROLL UP */
+
+    div.scroll-up {
+    	position: fixed;
+    	bottom: -30px;
+    	right: 6%;
+    	width: 28px;
+    	height: 28px;
+    	background-color: #fff;
+    	border-radius: 50%;
+    	opacity: 0;
+    	transition: bottom .5s linear, opacity .5s linear;
+    }
+
+    div.scroll-up.active {
+    	opacity: 1;
+    	bottom: 15px;
+    }
+
+    div.scroll-up i {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	font-size: 30px;
+    	color: black;
+    }
+
 
     @media (min-width:768px) {
     	section.mobile {
