@@ -24,7 +24,7 @@
 					<li><a href="index.html">Strona główna</a></li>
 					<li><a href="about.html">O mnie</a></li>
 					<li><a href="projects.html">Projekty</a></li>
-					<li><a href="conact.html">Kontakt</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -34,7 +34,7 @@
 					<li><a href="index.html">Strona główna</a></li>
 					<li><a href="about.html">O mnie</a></li>
 					<li><a href="projects.html">Projekty</a></li>
-					<li><a href="conact.html">Kontakt</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
 				</ul>
 			</nav>
 		</section>
