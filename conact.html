@@ -39,7 +39,12 @@
 			</nav>
 		</section>
 		<div class="move">
-			Kontakt
+			<form method="post" name="contactform" action="mail.php">
+				<input class="name" type="text" name="name" id="name" placeholder="Imię" required>
+				<input class="email" type="email" name="email" id="email" placeholder="E-mail" required>
+				<textarea class="message" name="message" id="message" placeholder="Treść wiadomości" required></textarea>
+				<button class="submit" type="submit" name="submit">Wyślij</button>
+			</form>
 		</div>
 		<div class="scroll-up">
 			<i class="fas fa-arrow-up"></i>
