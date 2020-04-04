@@ -85,15 +85,15 @@ nav.burger {
 	z-index: 1;
 }
 
-/* nav.burger::after {
+nav.burger::after {
 	position: absolute;
 	bottom: 15px;
 	content: "";
 	display: block;
-	height: 1px;
-	width: 80%;
+	height: 2px;
+	width: 90%;
 	background-color: black;
-} */
+}
 
 nav.burger.active {
 	top: 20px;
@@ -332,6 +332,7 @@ div.scroll-up {
 	opacity: 0;
 	transition: bottom .5s linear, opacity .5s linear;
 	z-index: 99;
+	cursor: pointer;
 }
 
 div.scroll-up.active {
@@ -410,6 +411,7 @@ button.submit {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 32px;
+	cursor: pointer;
 }
 
 div.contact-icons {
@@ -425,6 +427,7 @@ div.contact-icons a {
 	color: black;
 	line-height: 50px;
 	text-decoration: none;
+	transition: .3s;
 }
 
 div.contact-icons span.center {
@@ -438,12 +441,111 @@ div.contact-icons span.center {
 	text-decoration: none;
 	margin-bottom: 5px;
 	margin-right: 10px;
+	transition: .3s;
 }
 
 div.contact-icons i {
 	font-size: 26px;
 	color: black;
+	transition: .3s;
 }
+
+/* ----------------------------------------------------- */
+/* ABOUT ---------------  ABOUT  ---------------- ABOUT */
+/* --------------------------------------------------- */
+
+h1.about-header {
+	font-size: 26px;
+	margin-top: 10px;
+}
+
+div.about-me {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div.about-me .about-image {
+	background-image: url(img/news_640x427.jpg);
+	width: 240px;
+	height: 240px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	margin: 15px auto;
+	border: 1px solid black;
+}
+
+div.about-me p {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+	text-indent: 10%;
+	letter-spacing: 0.5px;
+}
+
+section.hobby {
+	margin-bottom: 20px;
+	font-size: 0;
+}
+
+section.hobby h1.hobby-header {
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+section.hobby div.change-hobby {
+	position: relative;
+	text-align: center;
+	width: 98%;
+	margin: 0 auto;
+	color: rgb(223, 223, 223);
+}
+
+section.hobby div.change-hobby::before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	content: "";
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+section.hobby div.change-hobby img {
+	width: 100%;
+}
+
+section.hobby div.change-hobby h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+section.hobby div.change-hobby i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 0 0 6px #aaa;
+	z-index: 10;
+	padding: 5px 10px;
+}
+
+section.hobby div.change-hobby i:nth-of-type(1) {
+	left: 0;
+}
+
+section.hobby div.change-hobby i:nth-of-type(2) {
+	right: 0;
+}
+
+/* --------------------------------------------------------------- */
+/* MEDIA QUERIES --------  MEDIA QUERIES  --------- MEDIA QUERIES */
+/* ------------------------------------------------------------- */
 
 @media (min-width:420px) {
 	section.main article div.img-main {
@@ -465,7 +567,7 @@ div.contact-icons i {
 
 	nav.burger {
 		position: absolute;
-		top: -220px;
+		top: -240px;
 		font-size: 40px;
 	}
 
@@ -589,6 +691,55 @@ div.contact-icons i {
 	aside div.info h3 {
 		font-size: 32px;
 	}
+
+	h1.contact-me {
+		font-size: 32px;
+		margin-top: 25px;
+		letter-spacing: 1px;
+		margin-left: 10%;
+	}
+
+	input.name,
+	input.email,
+	textarea.message,
+	button.submit {
+		font-size: 24px;
+		margin-top: 15px;
+		border-radius: 4px;
+		padding: 8px;
+	}
+
+	input.name,
+	input.email {
+		width: 80%;
+		height: 56px;
+	}
+
+	textarea.message {
+		width: 80%;
+		height: 280px;
+	}
+
+	button.submit {
+		padding: 0;
+		width: 80%;
+		height: 56px;
+		font-size: 34px;
+		line-height: 52px;
+	}
+
+	div.contact-icons {
+		width: 80%;
+	}
+
+	div.contact-icons a {
+		font-size: 28px;
+	}
+
+	div.contact-icons i {
+		font-size: 28px;
+		color: black;
+	}
 }
 
 @media (min-width:1024px) {
@@ -649,6 +800,61 @@ div.contact-icons i {
 	aside div.img-aside:hover {
 		width: 220px;
 		height: 220px;
+	}
+
+	h1.contact-me {
+		font-size: 34px;
+		margin-top: 35px;
+	}
+
+	input.name,
+	input.email,
+	textarea.message,
+	button.submit {
+		font-size: 26px;
+		margin-top: 20px;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	input.name,
+	input.email {
+		height: 62px;
+	}
+
+	textarea.message {
+		height: 300px;
+	}
+
+	button.submit {
+		padding: 0;
+		height: 62px;
+		font-size: 36px;
+		line-height: 58px;
+		transition: .3s linear;
+	}
+
+	button.submit:hover {
+		background-color: #000;
+		color: white;
+		border-color: white;
+	}
+
+	div.contact-icons a:hover {
+		font-weight: bold;
+	}
+
+	div.contact-icons a:hover span.center {
+		background-color: #000;
+	}
+
+	div.contact-icons a:hover i {
+		color: #fff;
+	}
+
+	div.contact-icons span.center {
+		margin-right: 15px;
+		margin-bottom: 10px;
 	}
 }
 
